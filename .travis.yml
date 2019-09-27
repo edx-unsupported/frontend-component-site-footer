@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- 10
+cache:
+  directories:
+  - "~/.npm"
+install:
+- npm install
+script:
+- npm run lint
+- npm run i18n_extract
+- npm run test
+- npm run build
+- npm run is-es5
+after_success:
+- npm run travis-deploy-once "npm run semantic-release"
+- npm run coveralls
+env:
+  global:
+  # NPM_TOKEN
+  - secure: Ai9CLYxOqjFil87lViejLDlciNi6TBxrL+3hfBbAgxvjlRdra/SyPMNdA+oqvVNn4Sdqvlrt5GljymwwmbkxthbugOyPuV+18B4KQicDeCjkxxeACEAYinDnoeNqsiZokkWTgcTIzvgiidoI+uDHJ1tF1gYdY+Gii5AlEbaFJUgamYOfvwCW0S7DfWNu8BPY55ExVaxboZdryVImbH6qyp0JfQ4PIaiU9fl/ejFYVA1mQpTlNUmlgijatteZnQZv37K8C6UK2TnoVHGNJ7RrDdFzwySjMzEPUjK67Ldf6nnrC12kPELix75wN28s715kFsQiqyy5gP0xFnAsy07pha9dzBV3kUcj8LwEZWGYfelZdTIUC369YeAHH9kIsk1xXFAijGDUFtzSZojYM7l+Im8zSYNfZCZ/xcLzFspaT7o0dDVMEhGxui4nzlqdBFPujriQY8m2KDdcHIuhWkvW98uOyRBuBuYNl5x5JWY5+oDmEeBbyUqKSiQNU5vWm8Svs0TU7K+ON78oy+re8cYpPig2p/5f7pFe3ROnvIgrd/KbHXaRbmOppzQHDxFxWxvW4jR+60sodxa9hb9wrEgRAljmgA/iiNuEuSnv7CPLMK/81Ic0CzcZo0oytbEdZg+LInWFsUcPfEkrteHzf3GzaSaP9wYntDrBsJc0+oNDas0=
+  # GH_TOKEN
+  - secure: GvVKLXJ4j5Q4dyEQu9LIVTWd4rhmPFM54GqCRaRs4/gwns4aFlUaFPwLsoNmQzpE1odSqjJvL/asZyqm8vhKkBhWQtG/aV3GBwiJt83kgnGAblwxOUFA5o3xM6XqXjmRXGPlvtWn6kfWWfvCm5AzSrTuOTbXAJWIqlbzj0pWvHF5UFAvHBPn3O6yiWldYC2cIybQZauxpwKldKSmK9+MVbB1JdsgyvKEvLJRskTgwSx/0oAgi9ZhNANGLjVrYQOs5XaGXD3jmJFEZ03s+Fn/S/t7X/ktv0Kl0iq4tsyc3pNUpagCeDJ+4u0ZnYFUW0E/xcnQA6wbaly3faiFzYHCzLi3uTHU/Go67gXfX7WZTp7/yGMgxPqMryZ7/Nmmob+A/UACyHCstqSI2H2unNAhvrj1WtkpSNH0wMgqWCAE2QquDNqKiQIEg4+tk8gDX+mua3lB9Rye+MCJp0feDnxOxhbpD1Hm6pec1nCvbLNq0FHYwxOfvD/kkBiCYuXUoqEjpdyTOJ++s5ncZirw6re2mMKoVMUGGAWVe+ulsYDEhdWz+e4ojEvyBrnmTeIUg0CxibqgpPBW6xo07h6CSw20Xy9bOjQbpKfL8tjTeWNbjrPJsv5BA+9Sx9HSwUO+yaK61VESmswOG5lTrBPV/gqbUMnQON+w//ekuDL88jSfWbI=
