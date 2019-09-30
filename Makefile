@@ -1,4 +1,4 @@
-transifex_resource = frontend-component-footer
+transifex_resource = frontend-component-site-footer
 transifex_langs = "ar,fr,es_419,zh_CN"
 
 transifex_utils = ./node_modules/.bin/transifex-utils.js

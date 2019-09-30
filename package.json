@@ -27,14 +27,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/frontend-component-footer.git"
+    "url": "git+https://github.com/edx/frontend-component-site-footer.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/edx/frontend-component-footer/issues"
+    "url": "https://github.com/edx/frontend-component-site-footer/issues"
   },
-  "homepage": "https://github.com/edx/frontend-component-footer#readme",
+  "homepage": "https://github.com/edx/frontend-component-site-footer#readme",
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-angular": "^6.0.2",
