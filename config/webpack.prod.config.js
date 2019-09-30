@@ -11,7 +11,7 @@ module.exports = Merge.smart(commonConfig, {
   entry: './src/lib/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    library: 'frontend-component-footer',
+    library: 'frontend-component-site-footer',
     libraryTarget: 'umd',
     globalObject: 'typeof self !== \'undefined\' ? self : this',
   },

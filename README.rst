@@ -1,10 +1,10 @@
-frontend-component-footer
+frontend-component-site-footer
 =========================
 
 |Build Status| |Coveralls| |npm_version| |npm_downloads| |license|
 |semantic-release|
 
-frontend-component-footer is a library containing a site footer
+frontend-component-site-footer is a library containing a site footer
 component for use when building edX frontend applications.
 
 At this time, this component is hard-coded to match the legacy LMS site footer, including all of its links. As implemented, this component should probably be called the ``frontend-component-lms-footer``.
@@ -12,7 +12,7 @@ At this time, this component is hard-coded to match the legacy LMS site footer, 
 Usage
 -----
 
-To install frontend-component-footer into your project::
+To install frontend-component-site-footer into your project::
 
    npm i --save @edx/frontend-component-site-footer
 
@@ -36,10 +36,10 @@ Build the component::
 
    npm run build
 
-.. |Build Status| image:: https://api.travis-ci.org/edx/frontend-component-footer.svg?branch=master
-   :target: https://travis-ci.org/edx/frontend-component-footer
-.. |Coveralls| image:: https://img.shields.io/coveralls/edx/frontend-component-footer.svg?branch=master
-   :target: https://coveralls.io/github/edx/frontend-component-footer
+.. |Build Status| image:: https://api.travis-ci.org/edx/frontend-component-site-footer.svg?branch=master
+   :target: https://travis-ci.org/edx/frontend-component-site-footer
+.. |Coveralls| image:: https://img.shields.io/coveralls/edx/frontend-component-site-footer.svg?branch=master
+   :target: https://coveralls.io/github/edx/frontend-component-site-footer
 .. |npm_version| image:: https://img.shields.io/npm/v/@edx/frontend-component-site-footer.svg
    :target: @edx/frontend-component-site-footer
 .. |npm_downloads| image:: https://img.shields.io/npm/dt/@edx/frontend-component-site-footer.svg
