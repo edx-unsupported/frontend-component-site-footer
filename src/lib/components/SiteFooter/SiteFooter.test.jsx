@@ -5,7 +5,6 @@ import { mount } from 'enzyme';
 import {
   faFacebookSquare,
   faTwitterSquare,
-  faYoutubeSquare,
   faLinkedin,
   faRedditSquare,
 } from '@fortawesome/free-brands-svg-icons';
@@ -102,12 +101,6 @@ const socialLinks = [
     url: 'https://www.twitter.com',
     icon: <FontAwesomeIcon icon={faTwitterSquare} className="social-icon" size="2x" />,
     screenReaderText: 'Follow edX on Twitter',
-  },
-  {
-    title: 'Youtube',
-    url: 'https://www.youtube.com',
-    icon: <FontAwesomeIcon icon={faYoutubeSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Subscribe to the edX YouTube channel',
   },
   {
     title: 'LinkedIn',
