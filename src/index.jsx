@@ -166,9 +166,9 @@ const App = () => (
       icon: <FontAwesomeIcon icon={faLanguage} size="2x" className="text-primary" />,
       onLanguageSelected: () => {},
     }}
-    copyright="© 2012–2019 edX Inc."
+    copyright={`© ${new Date().getFullYear()} edX Inc. All rights reserved.`}
     trademark={(
-      <React.Fragment>EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 <a href="http://www.beian.miit.gov.cn">粤ICP备17044299号-2</a></React.Fragment>
+      <React.Fragment>深圳市恒宇博科技有限公司 <a href="http://www.beian.miit.gov.cn">粤ICP备17044299号-2</a></React.Fragment>
     )}
   />
 );
