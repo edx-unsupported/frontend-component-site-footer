@@ -79,7 +79,7 @@
     "react-test-renderer": "^16.6.0",
     "reactifex": "^1.1.1",
     "sass-loader": "^6.0.6",
-    "semantic-release": "^15.1.7",
+    "semantic-release": "^17.2.3",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.20.2",
     "travis-deploy-once": "^5.0.0",
