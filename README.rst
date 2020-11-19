@@ -1,5 +1,5 @@
 frontend-component-site-footer
-=========================
+==============================
 
 |Build Status| |Coveralls| |npm_version| |npm_downloads| |license|
 |semantic-release|
@@ -36,8 +36,8 @@ Build the component::
 
    npm run build
 
-.. |Build Status| image:: https://api.travis-ci.org/edx/frontend-component-site-footer.svg?branch=master
-   :target: https://travis-ci.org/edx/frontend-component-site-footer
+.. |Build Status| image:: https://api.travis-ci.com/edx/frontend-component-site-footer.svg?branch=master
+   :target: https://travis-ci.com/edx/frontend-component-site-footer
 .. |Coveralls| image:: https://img.shields.io/coveralls/edx/frontend-component-site-footer.svg?branch=master
    :target: https://coveralls.io/github/edx/frontend-component-site-footer
 .. |npm_version| image:: https://img.shields.io/npm/v/@edx/frontend-component-site-footer.svg
